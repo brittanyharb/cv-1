@@ -1,6 +1,6 @@
 ---
-title: "Nick Strayer's CV"
-author: Nick Strayer
+title: "Brittany Harb's CV"
+author: Brittany Harb
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -50,25 +50,15 @@ Aside
 
 ![logo](beta_dist.png){width=100%}
 
-```{r}
-# When in export mode the little dots are unaligned, so fix that. 
-if(PDF_EXPORT){
-  cat("View this CV online with links at _nickstrayer.me/cv_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
-}
-```
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
-
+- <i class="fa fa-envelope"></i> brittanyharb@gmail.com
+- <i class="fa fa-github"></i> github.com/brittanyharb
+- <i class="fa fa-phone"></i> 480-434-2765
+- <i class="fa fa-linkedin"></i> linkedin.com/in/brittany-harb-2a0504104/
 
 
 Language Skills {#skills}
@@ -78,12 +68,15 @@ Language Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
+  "Microsoft Office",   5,
+  "Peoplesoft Oracle",  5,
+  "Prologue",           5,
+  "ImageCenter",        5,
+  "IBS Insight",        5,
+  "Workday",            4.5,
+  "SAP Concur",         4.5,
+  "Python",             3,
   "SQL",                3,
-  "C++",                3,
-  "AWK",                3
 )
 
 build_skill_bars(skills)
@@ -108,15 +101,15 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Brittany Harb {#title}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
+intro_text <- "Brittany is in the final year of a Master's of Science in Program Evaluation and Data Analytics. She is studying at her alma mater, where she received a Bachelor's Degree in Political Science. She has been in the workforce for over 10 years, and has used this time to develop excellent communication, time-management, and problem solving skills. Brittany loves working in fast-paced, focused environments. She works very well in a team setting, but can also complete necessary tasks independently and on-time. She is highly proficient in most Accounts Payable software, including SAP Concur, Workday, Prologue, and PeopleSoft Oracle. Her experience at Customer's Bank has taught her important aspects of business and the financial sector, and has become a valuable member of her team due to her attitude that no job is too small for someone to do. She believes that hard work and open communication are vital in a professional setting, and will always show up with a positive attitude. 
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
-"
+ Brittany also works with data analysis, and has advanced knowledge of working with data analytics software, specifically R and Rstudio, though she is also proficient in Python and SQL. She can perform basic functions in all systems, and can use R to conduct an even wider variety of functions, including text analysis and data visualization. Brittany is hoping to find a company to grow with, and a role in a job that challenges her every day!"
+
 
 cat(sanitize_links(intro_text))
 ```
@@ -132,80 +125,39 @@ print_section(position_data, 'education')
 
 
 
-Research Experience {data-icon=laptop}
+Professional Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'research_positions')
+print_section(position_data, 'professional_experience')
 ```
 
 
 
-Industry Experience {data-icon=suitcase}
+Other Work Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ::: aside
-I have worked in a variety of roles ranging from journalist to software engineer to data scientist. I like collaborative environments where I can learn from my peers. 
+I have worked a variety of jobs in the food service industry. My time in these roles is noteable as they allowed me to develop excellent customer service skills as well as working in fast-paced environments.
 :::
 
 ```{r}
-print_section(position_data, 'industry_positions')
+print_section(position_data, 'other_work_experience')
 ```
 
 <br>
 <br>
 <br>
 
-Teaching Experience {data-icon=chalkboard-teacher}
+Academic Activities {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
-I am passionate about education. I believe that no topic is too complex if the teacher is empathetic and willing to think about new methods of approaching task. 
+I have spent much of my academic career being heavily involved in additional programs. I love getting to collaborate with other students and to be able to help new students be successful. I have participated in additional programs outside of the required curriculums in order to expand my personal knowledge and have continued involvement since!  
 :::
 
 ```{r}
-print_section(position_data, 'teaching_positions')
-```
-
-
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-
-::: aside
-I regularly blog about data science and visualization on my blog [LiveFreeOrDichotomize.](https://livefreeordichotomize.com/)
-:::
-
-```{r}
-print_section(position_data, 'data_science_writings')
-```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'about_me_press')
-```
-
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'by_me_press')
-```
-
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'academic_articles')
+print_section(position_data, 'academic_activities')
 ```
 
 
