@@ -123,7 +123,12 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, 'education')
 ```
 
+Current Position {data-icon=laptop}
+--------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'current_position')
+```
 
 Professional Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
